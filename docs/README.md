@@ -8,8 +8,19 @@ footer: "ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]"
 
 
 **Виконав(-ла):** 
+	
+*студент 2-го курсу, групи ІО-05* **Дмитро БЕЦЬ [Telegram](https://t.me/pidg_ua)**
 
-*студент(-ка) 2-го курсу, групи (шифр групи)*<span padding-right:5em></span> **[ім’я ПРІЗВИЩЕ] [Посилання email, tg, fb]**
+*студент 2-го курсу, групи ІО-05* **Денис ІСМАИЛОВ [Telegram](https://t.me/denchik_I)**
+
+*студентка 2-го курсу, групи ІО-05* **Ірина КОГАЙ [Telegram](https://t.me/unblockkkmebitch)**
+
+*студентка 2-го курсу, групи ІО-05* **Наталія МАКСИМУК [Telegram](https://t.me/mandarinkaa00)**
+
+*студентка 2-го курсу, групи ІО-05* **Уляна СУРГОВСЬКА [Telegram](https://t.me/Ulianka7)**
+
+*студент 2-го курсу, групи ІО-05* **Гліб ФЄТІСОВ [Telegram](https://t.me/Fietisov23)**
+
 
 
 **Керівник**
