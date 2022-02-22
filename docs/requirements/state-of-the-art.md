@@ -4,9 +4,9 @@
 - <a href="#firstParag">Вступ</a>
 - <a href="#secongParag">Основні визначення</a>
 - <a href="#thirdParag">Підходи та способи вирішення завдання</a>
-- <a href = "#fourthParag">Порівняльна характеристика існуючих засобів вирішення завдання</a>
-- <a href = "#fifthParag">Висновки</a>
-- <a href = "#sixthParag">Посилання</a>
+- <a href="#fourthParag">Порівняльна характеристика існуючих засобів вирішення завдання</a>
+- <a href="#fifthParag">Висновки</a>
+- <a href="#sixthParag">Посилання</a>
 
 
 <p id = "firstParag"></p>
