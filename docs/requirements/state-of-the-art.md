@@ -326,4 +326,3 @@ Cервіс, що надає інформацію про всі маршрути
 **[https://uk.theastrologypage.com/metadata](https://uk.theastrologypage.com/metadata)**
 
 **[https://uk.fondoperlaterra.org/comdifference-between-data-and-metadata-25](https://uk.fondoperlaterra.org/comdifference-between-data-and-metadata-25)**
-
