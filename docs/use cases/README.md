@@ -1,5 +1,60 @@
 # Модель прецедентів
 
+<h2><span style="color: black;"> Діаграма прецедентів </span></h2>
+
+@startuml
+
+actor "Administrator" as Administrator
+actor "Editor" as Editor
+actor "User" as User
+actor "Guest" as Guest
+
+usecase "<b>UCA_1.1</b>\nНадати права\n модератора користувачу" as UCA_1.1
+usecase "<b>UCA_1.2</b>\nВидалити права модератора\n у користувача/модератора" as UCA_1.2
+usecase "<b>UCA_1.3</b>\nВидалити акаунт\n користувача" as UCA_1.3
+usecase "<b>UCA_1.4</b>\nДодати dataset" as UCA_1.4
+usecase "<b>UCA_1.5</b>\nВидалити dataset" as UCA_1.5
+
+Administrator -r-> UCA_1.5
+Administrator -r-> UCA_1.4
+Administrator -r-> UCA_1.3
+Administrator -r-> UCA_1.2
+Administrator -r-> UCA_1.1
+
+
+usecase "<b>UCE_2.1</b>\nДодати dataset\n користувача" as UCE_2.1
+usecase "<b>UCE_2.2</b>\nВидалити dataset" as UCE_2.2
+usecase "<b>UCE_2.3</b>\nВидалити користувача" as UCE_2.3
+
+Editor -r-> UCE_2.3
+Editor -r-> UCE_2.2
+Editor -r-> UCE_2.1
+
+usecase "<b>UCU_3.1</b>\nПошук даних" as UCU_3.1
+usecase "<b>UCU_3.2</b>\nВізуалізація даних\n у вигляді таблиці" as UCU_3.2
+usecase "<b>UCU_3.3</b>\nЗберегти дані" as UCU_3.3
+usecase "<b>UCU_3.4</b>\nДодати dataset" as UCU_3.4
+
+User -r-> UCU_3.4
+User -r-> UCU_3.3
+User -r-> UCU_3.2
+User -r-> UCU_3.1
+
+usecase "<b>UCU_4.1</b>\nРеєстрація у системі" as UCU_4.1
+usecase "<b>UCU_4.2</b>\nПошук даних" as UCU_4.2
+usecase "<b>UCU_4.3</b>\nВізуалізація даних\n у вигляді таблиці" as UCU_4.3
+
+Guest -r-> UCU_4.3
+Guest -r-> UCU_4.2
+Guest -r-> UCU_4.1
+
+
+
+Administrator -d-|> Editor
+Editor -d-|> User
+User -d-|> Guest
+@enduml
+
 В цьому файлі необхідно перелічити всі документи, розроблені в проекті та дати посилання на них.
 
 *Модель прецедентів повинна містити загальні оглядові діаграми та специфікації прецедентів.*
