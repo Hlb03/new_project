@@ -183,5 +183,6 @@ search "0, *" --* request_status
 
 [Посилання на реляційну схему](https://imgur.com/a/8qDOCqE)
 
+
 Також можна переглянути за посиланням: 
 [тут](https://github.com/Hlb03/new_project/blob/gleb/docs/design/media/relation_schema.PNG)
