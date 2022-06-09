@@ -179,5 +179,10 @@ search "0, *" --* request_status
 
 
 <h2>Реляційна схема</h2>
+	
+![](media/relation_schema.png)
+
+media/relation_schema.jpg
+
 
 
