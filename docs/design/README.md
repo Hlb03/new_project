@@ -179,10 +179,7 @@ search "0, *" --* request_status
 
 
 <h2>Реляційна схема</h2>
-	
-![](media/relation_schema.png)
 
-media/relation_schema.jpg
+![1](https://raw.githubusercontent.com/Hlb03/new_project/dev/docs/design/media/relation_schema.png)
 
-
-
+docs/design/media/relation_schema.PNG
