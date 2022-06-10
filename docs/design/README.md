@@ -181,7 +181,7 @@ search "0, *" --* request_status
 <h2>Реляційна схема</h2>
 
 
-[Посилання на реляційну схему](https://imgur.com/a/8qDOCqE)
+[Посилання на реляційну схему](https://imgur.com/a/1IxEQKt)
 
 Також можна переглянути за посиланням: 
-[тут](https://github.com/Hlb03/new_project/blob/gleb/docs/design/media/relation_schema.PNG)
+[тут](https://github.com/Hlb03/new_project/blob/gleb/docs/design/media/relationSchema.PNG)
