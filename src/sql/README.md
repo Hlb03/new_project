@@ -248,4 +248,110 @@ CREATE TABLE IF NOT EXISTS `TakeModeratorStatus` (
       ON DELETE NO ACTION
       ON UPDATE NO ACTION)
 ENGINE = InnoDB;
+
+
+-- ------------------------------------------------------------
+-- Insertion values in `Project_DBB`
+-- ------------------------------------------------------------
+
+-- ------------------------------------------------------------
+-- Data for table `Project_DBB`.`Role`
+-- ------------------------------------------------------------
+
+INSERT INTO `Project_DBB`.`Role` (`roleId`, `businessRole`) 
+        VALUES (DEFAULT, 'Administrator');
+INSERT INTO `Project_DBB`.`Role` (`roleId`, `businessRole`) 
+        VALUES (DEFAULT, 'Moderator');
+INSERT INTO `Project_DBB`.`Role` (`roleId`, `businessRole`)
+        VALUES (DEFAULT, 'User');
+INSERT INTO `Project_DBB`.`Role` (`roleId`, `businessRole`)
+        VALUES (DEFAULT, 'Guest');
+
+
+-- ------------------------------------------------------------
+-- Data for table `Project_DBB`.`User`
+-- ------------------------------------------------------------
+
+INSERT INTO `Project_DBB`.`User` (`userId`, `nickname`, `email`, `password`, `roleId`)
+    VALUES (DEFAULT, 'melo', 'adop23@gmail.com', '1234567', '1');
+INSERT INTO `Project_DBB`.`User` (`userId`, `nickname`, `email`, `password`, `roleId`)
+    VALUES (DEFAULT, 'socket', 'creator03@gmail.com', 'qwerty', '2');
+INSERT INTO `Project_DBB`.`User` (`userId`, `nickname`, `email`, `password`, `roleId`)
+    VALUES (DEFAULT, 'jav-east', 'developer31@gmail.com', 'coding8est', '3');
+INSERT INTO `Project_DBB`.`User` (`userId`, `nickname`, `email`, `password`, `roleId`)
+    VALUES (DEFAULT, 'imagerTp', 'explissive@gmail.com', 'emotionCntrl2', '4');
+
+
+-- ------------------------------------------------------------
+-- Data for table `Project_DBB`.`Dataset`
+-- ------------------------------------------------------------
+
+INSERT INTO `Project_DBB`.`Dataset` (`datasetId`, `file_name`, `creation_data`, `userId`)
+    VALUES (DEFAULT, 'successfulProjects', '2022-03-10', '1');
+INSERT INTO `Project_DBB`.`Dataset` (`datasetId`, `file_name`, `creation_data`, `userId`)
+    VALUES (DEFAULT, 'soldComputers', '2022-01-01', '2');
+INSERT INTO `Project_DBB`.`Dataset` (`datasetId`, `file_name`, `creation_data`, `userId`)
+    VALUES (DEFAULT, 'fuelConsumption', '2022-06-10', '3');
+INSERT INTO `Project_DBB`.`Dataset` (`datasetId`, `file_name`, `creation_data`, `userId`)
+    VALUES (DEFAULT, 'avgStudyingTimePerDay', '2022-06-01', '4');
+
+-- --------------------------------------------------------------
+-- Data for table `Project_DBB`.`RequestStatus`
+-- --------------------------------------------------------------
+
+INSERT INTO `Project_DBB`.`RequestStatus` (`statusId`, `status`)
+    VALUES (DEFAULT, 'completed');
+INSERT INTO `Project_DBB`.`RequestStatus` (`statusId`, `status`)
+    VALUES (DEFAULT, 'rejected');
+INSERT INTO `Project_DBB`.`RequestStatus` (`statusId`, `status`)
+    VALUES (DEFAULT, 'processing');
+
+
+-- --------------------------------------------------------------
+-- Data for table `Project_DBB`.`AddDataset`
+-- --------------------------------------------------------------
+
+INSERT INTO `Project_DBB`.`AddDataset` (`addId`, `file_name`, `creation_data`, `userId`, `statusId`, `datasetId`)
+    VALUES (DEFAULT, 'salaryStatistics', '2022-04-01', '4', '3', '3');
+INSERT INTO `Project_DBB`.`AddDataset` (`addId`, `file_name`, `creation_data`, `userId`, `statusId`, `datasetId`)
+    VALUES (DEFAULT, 'avgStudent`sMark', '2022-02-01', '2', '1', '2');
+INSERT INTO `Project_DBB`.`AddDataset` (`addId`, `file_name`, `creation_data`, `userId`, `statusId`, `datasetId`)
+    VALUES (DEFAULT, 'topSongs', '2015-10-25', '1', '2', '4');
+
+-- --------------------------------------------------------------
+-- Data for table `Project_DBB`.`SaveDataset`
+-- --------------------------------------------------------------
+
+INSERT INTO `Project_DBB`.`SaveDataset` (`saveId`, `name`, `link`, `userId`, `statusId`, `datasetId`)
+    VALUES (DEFAULT, 'successfulProjects', 'someSite.ua', '2', '3', '1');
+INSERT INTO `Project_DBB`.`SaveDataset` (`saveId`, `name`, `link`, `userId`, `statusId`, `datasetId`)
+    VALUES (DEFAULT, 'soldComputers', 'someSite.ua', '1', '1', '2');
+
+-- ---------------------------------------------------------------
+-- Data for table `Project_DBB`.`DelDataset`
+-- ---------------------------------------------------------------
+
+INSERT INTO `Project_DBB`.`DelDataset` (`delId`, `name`, `link`, `userId`, `statusId`, `datasetId`)
+    VALUES (DEFAULT, 'fuelConsumption', 'someSite.ua', '4', '3', '3');
+INSERT INTO `Project_DBB`.`DelDataset` (`delId`, `name`, `link`, `userId`, `statusId`, `datasetId`)
+    VALUES (DEFAULT, 'avgStudyingTimePerDay', 'someSite.ua', '3', '2', '4');
+
+
+-- ----------------------------------------------------------------
+-- Data for table `Project_DBB`.`GiveModeratorStatus`
+-- ----------------------------------------------------------------
+
+INSERT INTO `Project_DBB`.`GiveModeratorStatus` (`giveId`, `user_name`, `date`, `userId`, `statusId`, `datasetId`)
+    VALUES (DEFAULT, 'melo', '2022-03-25', '1', '3', '4');
+INSERT INTO `Project_DBB`.`GiveModeratorStatus` (`giveId`, `user_name`, `date`, `userId`, `statusId`, `datasetId`)
+    VALUES (DEFAULT, 'socket', '2022-01-20', '2', '3', '2');
+
+-- ----------------------------------------------------------------
+-- Data for table `Project_DBB`.`TakeModeratorStatus`
+-- ----------------------------------------------------------------
+
+INSERT INTO `Project_DBB`.`TakeModeratorStatus` (`takeId`, `user_name`, `date`, `userId`, `statusId`, `datasetId`)
+    VALUES (DEFAULT, 'jav-east', '2021-12-22', '3', '3', '1');
+INSERT INTO `Project_DBB`.`TakeModeratorStatus` (`takeId`, `user_name`, `date`, `userId`, `statusId`, `datasetId`)
+    VALUES (DEFAULT, 'imagerTp', '2022-10-02', '4', '2', '3');
 ```
