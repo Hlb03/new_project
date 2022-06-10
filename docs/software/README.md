@@ -256,7 +256,6 @@ ENGINE = InnoDB;
 -- ------------------------------------------------------------
 -- Data for table `Project_DBB`.`Role`
 -- ------------------------------------------------------------
-
 INSERT INTO `Project_DBB`.`Role` (`roleId`, `businessRole`) 
         VALUES (DEFAULT, 'Administrator');
 INSERT INTO `Project_DBB`.`Role` (`roleId`, `businessRole`) 
@@ -270,7 +269,6 @@ INSERT INTO `Project_DBB`.`Role` (`roleId`, `businessRole`)
 -- ------------------------------------------------------------
 -- Data for table `Project_DBB`.`User`
 -- ------------------------------------------------------------
-
 INSERT INTO `Project_DBB`.`User` (`userId`, `nickname`, `email`, `password`, `roleId`)
     VALUES (DEFAULT, 'melo', 'adop23@gmail.com', '1234567', '1');
 INSERT INTO `Project_DBB`.`User` (`userId`, `nickname`, `email`, `password`, `roleId`)
@@ -284,7 +282,6 @@ INSERT INTO `Project_DBB`.`User` (`userId`, `nickname`, `email`, `password`, `ro
 -- ------------------------------------------------------------
 -- Data for table `Project_DBB`.`Dataset`
 -- ------------------------------------------------------------
-
 INSERT INTO `Project_DBB`.`Dataset` (`datasetId`, `file_name`, `creation_data`, `userId`)
     VALUES (DEFAULT, 'successfulProjects', '2022-03-10', '1');
 INSERT INTO `Project_DBB`.`Dataset` (`datasetId`, `file_name`, `creation_data`, `userId`)
@@ -297,7 +294,6 @@ INSERT INTO `Project_DBB`.`Dataset` (`datasetId`, `file_name`, `creation_data`, 
 -- --------------------------------------------------------------
 -- Data for table `Project_DBB`.`RequestStatus`
 -- --------------------------------------------------------------
-
 INSERT INTO `Project_DBB`.`RequestStatus` (`statusId`, `status`)
     VALUES (DEFAULT, 'completed');
 INSERT INTO `Project_DBB`.`RequestStatus` (`statusId`, `status`)
@@ -309,7 +305,6 @@ INSERT INTO `Project_DBB`.`RequestStatus` (`statusId`, `status`)
 -- --------------------------------------------------------------
 -- Data for table `Project_DBB`.`AddDataset`
 -- --------------------------------------------------------------
-
 INSERT INTO `Project_DBB`.`AddDataset` (`addId`, `file_name`, `creation_data`, `userId`, `statusId`, `datasetId`)
     VALUES (DEFAULT, 'salaryStatistics', '2022-04-01', '4', '3', '3');
 INSERT INTO `Project_DBB`.`AddDataset` (`addId`, `file_name`, `creation_data`, `userId`, `statusId`, `datasetId`)
@@ -320,7 +315,6 @@ INSERT INTO `Project_DBB`.`AddDataset` (`addId`, `file_name`, `creation_data`, `
 -- --------------------------------------------------------------
 -- Data for table `Project_DBB`.`SaveDataset`
 -- --------------------------------------------------------------
-
 INSERT INTO `Project_DBB`.`SaveDataset` (`saveId`, `name`, `link`, `userId`, `statusId`, `datasetId`)
     VALUES (DEFAULT, 'successfulProjects', 'someSite.ua', '2', '3', '1');
 INSERT INTO `Project_DBB`.`SaveDataset` (`saveId`, `name`, `link`, `userId`, `statusId`, `datasetId`)
@@ -329,7 +323,6 @@ INSERT INTO `Project_DBB`.`SaveDataset` (`saveId`, `name`, `link`, `userId`, `st
 -- ---------------------------------------------------------------
 -- Data for table `Project_DBB`.`DelDataset`
 -- ---------------------------------------------------------------
-
 INSERT INTO `Project_DBB`.`DelDataset` (`delId`, `name`, `link`, `userId`, `statusId`, `datasetId`)
     VALUES (DEFAULT, 'fuelConsumption', 'someSite.ua', '4', '3', '3');
 INSERT INTO `Project_DBB`.`DelDataset` (`delId`, `name`, `link`, `userId`, `statusId`, `datasetId`)
@@ -339,7 +332,6 @@ INSERT INTO `Project_DBB`.`DelDataset` (`delId`, `name`, `link`, `userId`, `stat
 -- ----------------------------------------------------------------
 -- Data for table `Project_DBB`.`GiveModeratorStatus`
 -- ----------------------------------------------------------------
-
 INSERT INTO `Project_DBB`.`GiveModeratorStatus` (`giveId`, `user_name`, `date`, `userId`, `statusId`, `datasetId`)
     VALUES (DEFAULT, 'melo', '2022-03-25', '1', '3', '4');
 INSERT INTO `Project_DBB`.`GiveModeratorStatus` (`giveId`, `user_name`, `date`, `userId`, `statusId`, `datasetId`)
@@ -348,7 +340,6 @@ INSERT INTO `Project_DBB`.`GiveModeratorStatus` (`giveId`, `user_name`, `date`, 
 -- ----------------------------------------------------------------
 -- Data for table `Project_DBB`.`TakeModeratorStatus`
 -- ----------------------------------------------------------------
-
 INSERT INTO `Project_DBB`.`TakeModeratorStatus` (`takeId`, `user_name`, `date`, `userId`, `statusId`, `datasetId`)
     VALUES (DEFAULT, 'jav-east', '2021-12-22', '3', '3', '1');
 INSERT INTO `Project_DBB`.`TakeModeratorStatus` (`takeId`, `user_name`, `date`, `userId`, `statusId`, `datasetId`)
