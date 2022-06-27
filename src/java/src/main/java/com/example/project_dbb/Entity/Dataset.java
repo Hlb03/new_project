@@ -21,7 +21,7 @@ public class Dataset {
     @Column(name = "creation_data")
     private Date creationDate;
 
-    @Column(name = "userId")
+    @Column(name = "userId") 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "userId", updatable = false)
     private User userId;

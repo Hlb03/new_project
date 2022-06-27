@@ -20,7 +20,7 @@ public class ModeratorStatus {
     @Column(name = "date")
     private Date date;
 
-    @Column(name = "userId")
+    @Column(name = "userId") 
     @ManyToOne(fetch =  FetchType.LAZY)
     @JoinColumn(name = "userId", updatable = false)
     private User userId;

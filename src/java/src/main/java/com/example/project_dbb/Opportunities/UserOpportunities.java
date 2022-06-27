@@ -9,26 +9,26 @@ public class UserOpportunities {
 
     private final UserRepo userRepo;
 
-    public UserOpportunities(UserRepo userRepo){
+    public UserOpportunities(UserRepo userRepo) {
         this.userRepo = userRepo;
     }
 
-    public List<User> getAllUser(){
+    public List<User> getAllUser() {
         return userRepo.findAll();
     }
 
-    public User getUserById(long id){
+    public User getUserById(long id) {
 
         return userRepo.findById(id).get();
     }
 
-    public String delUserById(long id){
+    public String delUserById(long id) {
 
         userRepo.deleteById(id);
         return "User was deleted";
     }
 
-    public String addUser(User user){
+    public String addUser(User user) {
 
         userRepo.save(user);
         return "User was added";

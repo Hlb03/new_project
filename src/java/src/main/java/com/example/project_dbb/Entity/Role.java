@@ -6,7 +6,7 @@ public enum Role {
 
     ADMINISTRATOR(1), MODERATOR(2), USER(3), GUEST(4);
 
-    @Id
+    @Id 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @OneToOne(fetch = FetchType.EAGER)
     @Column(name = "roleId", unique = true)

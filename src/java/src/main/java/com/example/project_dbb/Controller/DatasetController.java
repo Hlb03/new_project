@@ -16,7 +16,7 @@ public class DatasetController {
     private final DatasetOpportunities datasetOpportunities;
 
     @Autowired
-    public DatasetController(DatasetOpportunities datasetOpportunities){
+    public DatasetController(DatasetOpportunities datasetOpportunities) {
         this.datasetOpportunities = datasetOpportunities;
     }
 
@@ -29,21 +29,21 @@ public class DatasetController {
 
     @Deprecated
     @GetMapping(value = "/datasetId")
-    public ResponseEntity<Dataset> getById(@PathVariable long id){
+    public ResponseEntity<Dataset> getById(@PathVariable long id) {
         Dataset dataset = datasetOpportunities.getById(id);
 
         return new ResponseEntity<>(dataset, HttpStatus.OK);
     }
 
     @DeleteMapping(value = "/delDataset")
-    public ResponseEntity<Dataset> delDataset(@RequestBody Dataset dataset){
+    public ResponseEntity<Dataset> delDataset(@RequestBody Dataset dataset) {
         datasetOpportunities.delDataset(dataset);
 
         return new ResponseEntity<>(dataset, HttpStatus.OK);
     }
 
     @PostMapping(value = "/addDataset")
-    public ResponseEntity<Dataset> addDataset(@RequestBody Dataset dataset){
+    public ResponseEntity<Dataset> addDataset(@RequestBody Dataset dataset) {
         datasetOpportunities.saveDataset(dataset);
 
         return new ResponseEntity<>(dataset, HttpStatus.OK);

@@ -12,24 +12,24 @@ public class DatasetOpportunities {
 
 
     @Autowired
-    public DatasetOpportunities(DatasetRepo datasetRepo){
+    public DatasetOpportunities(DatasetRepo datasetRepo) {
         this.datasetRepo = datasetRepo;
     }
 
-    public List<Dataset> getAllDatasets(){
+    public List<Dataset> getAllDatasets() {
         return datasetRepo.findAll();
     }
 
     @Deprecated
-    public Dataset getById(long id){
+    public Dataset getById(long id) {
         return datasetRepo.getById(id);
     }
 
-    public void delDataset(Dataset dataset){
+    public void delDataset(Dataset dataset) {
         datasetRepo.delete(dataset);
     }
 
-    public void saveDataset(Dataset dataset){
+    public void saveDataset(Dataset dataset) {
         datasetRepo.save(dataset);
     }
 

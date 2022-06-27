@@ -13,7 +13,7 @@ public enum RequestStatus {
     @Column(name = "statusId", unique = true)
     private long statusId;
 
-    private RequestStatus(long statusId){
+    private RequestStatus(long statusId) {
         this.statusId = statusId;
     }
 }
