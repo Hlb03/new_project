@@ -349,4 +349,4 @@ INSERT INTO `Project_DBB`.`TakeModeratorStatus` (`takeId`, `user_name`, `date`, 
 
 - RESTfull сервіс для управління даними
 
-  Можна переглянути [тут](https://github.com/Hlb03/new_project/tree/gleb/src/java)
+  Можна переглянути [тут](https://github.com/Hlb03/new_project/tree/master/src/java)
